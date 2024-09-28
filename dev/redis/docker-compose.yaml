@@ -1,0 +1,7 @@
+services:
+  redis1:
+    image: redis:6.0-alpine3.12
+    restart: always
+    volumes: ['/home/deployments/redis/data:/data']
+    ports: ['20001:6379']
+version: '3'

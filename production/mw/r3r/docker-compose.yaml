@@ -1,0 +1,11 @@
+services:
+  japi:
+    image: dk-reg.mas:5000/itextos-r3r:2.0
+    environment: [
+       id=1, _JAVA_OPTIONS=-Xmx256m -Xms256m]
+    volumes: ['/etc/hosts:/etc/hosts','../platform:/platform','./logs:/opt/jboss/wildfly/standalone/log']
+    ports: ['21925:1075','8580:8080']
+version: '3'
+networks:
+  default:
+    external: {name: kafka}

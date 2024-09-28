@@ -1,0 +1,24 @@
+$TTL 1D
+@       IN      SOA     ns1.dev. admin.dev. (
+                        2023091401  ; Serial
+                        8H          ; Refresh
+                        2H          ; Retry
+                        1W          ; Expire
+                        1D          ; Minimum TTL
+                        )
+
+@       IN      NS      ns1.dev.
+
+; Define DNS records for hosts
+ns1     IN      A       192.168.1.86
+mw      IN      A       192.168.1.85
+masterdb   IN      A       192.168.1.126
+http   IN      A       192.168.1.95
+redis1  IN      A       192.168.1.125
+kafka1  IN      A       192.168.1.127
+smpp1   IN      A       192.168.1.128
+kannel  IN      A       192.168.1.88
+biller  IN      A       192.168.1.90
+dn      IN      A       192.168.1.92
+dnpost  IN      A       192.168.1.94
+aux     IN      A       192.168.1.86

@@ -1,0 +1,329 @@
+# my global config
+global:
+  scrape_interval: 15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.
+  evaluation_interval: 15s # Evaluate rules every 15 seconds. The default is every 1 minute.
+  # scrape_timeout is set to the global default (10s).
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+           - 192.168.1.104:9093
+
+
+# Load rules once and periodically evaluate them according to the global 'evaluation_interval'.
+rule_files:
+  - /etc/prometheus/rules/alert.rules.yml 
+  # - "first_rules.yml"
+  # - "second_rules.yml"
+
+# A scrape configuration containing exactly one endpoint to scrape:
+# Here it's Prometheus itself.
+scrape_configs:
+  # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
+  - job_name: "prometheus"
+
+    # metrics_path defaults to '/metrics'
+    # scheme defaults to 'http'.
+
+    static_configs:
+      - targets: ["localhost:9090"]
+
+  - job_name: "mw_ic_173"
+    static_configs:
+      - targets: ["192.168.1.173:20125"]
+
+  - job_name: "mw_ic_174"
+    static_configs:
+      - targets: ["192.168.1.174:20125"]
+
+  - job_name: "mw_sbcv_173"
+    static_configs:
+      - targets: ["192.168.1.173:20225"]
+
+  - job_name: "mw_sbcv_174"
+    static_configs:
+      - targets: ["192.168.1.174:20225"]
+
+  - job_name: "mw_vc_173"
+    static_configs:
+      - targets: ["192.168.1.173:20325"]
+
+  - job_name: "mw_vc_174"
+    static_configs:
+      - targets: ["192.168.1.174:20325"]
+
+  - job_name: "mw_rc_173"
+    static_configs:
+      - targets: ["192.168.1.173:20425"]
+
+  - job_name: "mw_rc_174"
+    static_configs:
+      - targets: ["192.168.1.174:20425"]
+
+
+  - job_name: "mw_ch_other_173"
+    static_configs:
+      - targets: ["192.168.1.173:20525"]
+
+  - job_name: "mw_ch_other_ch7_174"
+    static_configs:
+      - targets: ["192.168.1.174:21525"]
+
+
+  - job_name: "mw_ch_other_ch8_174"
+    static_configs:
+      - targets: ["192.168.1.174:22525"]
+
+
+  - job_name: "mw_subb_175"
+    static_configs:
+      - targets: ["192.168.1.175:20625"]
+
+  - job_name: "mw_subb_176"
+    static_configs:
+      - targets: ["192.168.1.176:20625"]
+
+  - job_name: "mw_sub-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:20725"]
+
+  - job_name: "mw_sub-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:20725"]
+
+
+  - job_name: "mw_fullmsg-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:20825"]
+
+  - job_name: "mw_fullmsg-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:20825"]
+
+
+  - job_name: "mw_dn-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:21125"]
+
+  - job_name: "mw_dn-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:21125"]
+
+
+  - job_name: "mw_dnpostlog-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:21325"]
+
+  - job_name: "mw_dnpostlog-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:21325"]
+
+
+  - job_name: "mw_dnnopayload-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:21425"]
+
+  - job_name: "mw_dnnopayload-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:21425"]
+
+
+  - job_name: "mw_r3c_177"
+    static_configs:
+      - targets: ["192.168.1.177:21825"]
+
+  - job_name: "mw_r3c_178"
+    static_configs:
+      - targets: ["192.168.1.178:21825"]
+
+  - job_name: "mw_dltc_177"
+    static_configs:
+      - targets: ["192.168.1.177:21725"]
+
+  - job_name: "mw_dltc_178"
+    static_configs:
+      - targets: ["192.168.1.178:21725"]
+
+  - job_name: "mw_prc_177"
+    static_configs:
+      - targets: ["192.168.1.177:21625"]
+
+  - job_name: "mw_prc_178"
+    static_configs:
+      - targets: ["192.168.1.178:21625"]
+
+  - job_name: "mw_smppdlrhandover_177"
+    static_configs:
+      - targets: ["192.168.1.177:21225"]
+
+  - job_name: "mw_smppdlrhandover_178"
+    static_configs:
+      - targets: ["192.168.1.178:21225"]
+
+
+  - job_name: "mw_wc_177"
+    static_configs:
+      - targets: ["192.168.1.177:21125"]
+
+  - job_name: "mw_wc_178"
+    static_configs:
+      - targets: ["192.168.1.178:21125"]
+
+  - job_name: "mw_dnp_177"
+    static_configs:
+      - targets: ["192.168.1.177:21025"]
+
+  - job_name: "mw_dnp_178"
+    static_configs:
+      - targets: ["192.168.1.178:21025"]
+
+
+  - job_name: "bulk_vsmsc1_104"
+    static_configs:
+      - targets: ["192.168.1.104:20033"]
+
+  - job_name: "bulk_vsmsc2_104"
+    static_configs:
+      - targets: ["192.168.1.104:20034"]
+
+  - job_name: "bulk_vsmsc3_104"
+    static_configs:
+      - targets: ["192.168.1.104:20035"]
+
+  - job_name: "bulk_vsmsc4_104"
+    static_configs:
+      - targets: ["192.168.1.104:20036"]
+
+  - job_name: "trans_vsmsc1_181"
+    static_configs:
+      - targets: ["192.168.1.181:20025"]
+
+  - job_name: "trans_vsmsc2_181"
+    static_configs:
+      - targets: ["192.168.1.181:20026"]
+
+  - job_name: "trans_vsmsc3_181"
+    static_configs:
+      - targets: ["192.168.1.181:20027"]
+
+  - job_name: "trans_vsmsc4_181"
+    static_configs:
+      - targets: ["192.168.1.181:20028"]
+
+  - job_name: "otp_vsmsc1_182"
+    static_configs:
+      - targets: ["192.168.1.182:20029"]
+
+  - job_name: "otp_vsmsc2_182"
+    static_configs:
+      - targets: ["192.168.1.182:20030"]
+
+  - job_name: "otp_vsmsc3_182"
+    static_configs:
+      - targets: ["192.168.1.182:20031"]
+
+  - job_name: "trans_vsmsc4_182"
+    static_configs:
+      - targets: ["192.168.1.182:20032"]
+
+
+  - job_name: "mw_japi_193"
+    static_configs:
+      - targets: ["192.168.1.193:21525"]
+
+  - job_name: "mw_dnr_193"
+    static_configs:
+      - targets: ["192.168.1.193:20925"]
+
+  - job_name: "mw_japi_195"
+    static_configs:
+      - targets: ["192.168.1.195:21525"]
+
+  - job_name: "mw_dnr_195"
+    static_configs:
+      - targets: ["192.168.1.195:20925"]
+
+
+  - job_name: "mw_japi_196"
+    static_configs:
+      - targets: ["192.168.1.196:21525"]
+
+  - job_name: "mw_dnr_196"
+    static_configs:
+      - targets: ["192.168.1.196:20925"]
+
+
+
+  - job_name: "mw_sbc_175"
+    static_configs:
+      - targets: ["192.168.1.175:21225"]
+
+  - job_name: "mw_sbc_176"
+    static_configs:
+      - targets: ["192.168.1.176:21225"]
+
+  - job_name: "mw_t2e_175"
+    static_configs:
+      - targets: ["192.168.1.175:21525"]
+
+  - job_name: "mw_t2e_176"
+    static_configs:
+      - targets: ["192.168.1.176:21525"]
+
+  - job_name: "mw_clienthandover-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:21025"]
+
+  - job_name: "mw_clienthandover-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:21025"]
+
+
+  - job_name: "mw_errorlog-t2tb_175"
+    static_configs:
+      - targets: ["192.168.1.175:20925"]
+
+  - job_name: "mw_errorlog-t2tb_176"
+    static_configs:
+      - targets: ["192.168.1.176:20925"]
+
+
+  - job_name: "mw_r3r_193"
+    static_configs:
+      - targets: ["192.168.1.193:21925"]
+
+
+
+  - job_name: "mw_r3r_195"
+    static_configs:
+      - targets: ["192.168.1.195:21925"]
+
+
+
+  - job_name: "mw_r3r_196"
+    static_configs:
+      - targets: ["192.168.1.196:21925"]
+
+  - job_name: "mw_rch_174"
+    static_configs:
+      - targets: ["192.168.1.174:20725"]
+
+  - job_name: "mw_rch_173"
+    static_configs:
+      - targets: ["192.168.1.173:20725"]
+
+  - job_name: "mw_dch_174"
+    static_configs:
+      - targets: ["192.168.1.174:20625"]
+
+
+  - job_name: "mw_httpclienthandover_177"
+    static_configs:
+      - targets: ["192.168.1.177:21925"]
+
+
+  - job_name: "mw_httpclienthandover_178"
+    static_configs:
+      - targets: ["192.168.1.178:21925"]

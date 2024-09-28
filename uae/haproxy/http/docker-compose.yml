@@ -1,0 +1,7 @@
+services:
+ http:
+    image: haproxy:1.6
+    restart: always
+    volumes: ['./config/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:ro']
+    ports: ['15000:80']
+version: '3.3'

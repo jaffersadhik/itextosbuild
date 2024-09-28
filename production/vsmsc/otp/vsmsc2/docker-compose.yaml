@@ -1,0 +1,10 @@
+services:
+  bulkvsmsc1:
+    image: dk-reg.mas:5000/itextos-smpp-interface:2.0
+    environment: [module=smppinterface,cluster.names=otp, modvalue=1,
+      concat.redis.index=1, _JAVA_OPTIONS=-Xmx256m -Xms256m]
+    restart: always
+    volumes: ['/nfs/:/nfs/','/etc/hosts:/etc/hosts','/home/deployments/otp/vsmsc2/platform:/platform','/home/deployments/otp/vsmsc2/logs:/logs','/home/deployments/otp/vsmsc2/global.properties:/instance/global.properties','/home/deployments/otp/vsmsc2/log4j2-common.xml:/instance/log4j2-common.xml','/home/deployments/otp/vsmsc2/smpp-interface.properties:/instance/smpp-interface.properties']
+    ports: ['20026:20000','3775:2775']
+version: '3'
+

@@ -1,0 +1,26 @@
+services:
+  bearerbox:
+    image: dk-reg.mas:5000/kannelmysqlssl:2.0
+    restart: always
+    volumes: ['./log/:/var/log/kannel/', './config:/etc/kannel',
+      './data/spool/:/var/spool/kannel/','./nfs/:/nfs/']
+    ports: ['17101:17101', '18101:18101']
+    command: /usr/local/src/kannel/gateway/gw/bearerbox /etc/kannel/kannel.conf
+    depends_on:
+      - mysql
+  smsbox:
+    image: dk-reg.mas:5000/kannelmysqlssl:2.0
+    restart: always
+    volumes: ['./log/:/var/log/kannel/', './config:/etc/kannel']
+    ports: ['18003:35001']
+    command: /usr/local/src/kannel/gateway/gw/smsbox /etc/kannel/kannel.conf
+    depends_on:
+      - bearerbox
+  mysql:
+    image: dk-reg.mas:5000/mariadb:1.0
+    environment: [MYSQL_ALLOW_EMPTY_PASSWORD=yes, MYSQL_DATABASE=gw, TZ=Asia/Kolkata]
+    restart: always
+    volumes: ['./data/mysql:/var/lib/mysql', './log/mysql:/var/log/mysql/',
+      './config/mysql:/etc/mysql']
+    ports: ['18001:3306']
+version: '3'

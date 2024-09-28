@@ -1,0 +1,16 @@
+$TTL 1D
+@       IN      SOA     ns1.dev. admin.dev. (
+                        2023091401  ; Serial
+                        8H          ; Refresh
+                        2H          ; Retry
+                        1W          ; Expire
+                        1D          ; Minimum TTL
+                        )
+
+@       IN      NS      ns1.dev.
+
+; Define reverse DNS records for hosts
+10      IN      PTR     ns1.dev.
+85      IN      PTR     mw.dev.
+126      IN      PTR     masterdb.dev.
+95      IN      PTR     interface.dev.

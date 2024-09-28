@@ -1,0 +1,2 @@
+smtp._domainkey.techwizemail.in techwizemail.in:mail:/etc/opendkim/keys/techwizemail.in/mail.private
+

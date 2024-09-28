@@ -1,0 +1,97 @@
+2023-07-31 11:07:33.171 [DEBUG] [pool-2-thread-1          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 16
+2023-07-31 11:07:33.287 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '      2299' Mills loaded size '    0.0033' MB
+2023-07-31 11:07:40.343 [INFO ] [t-verify-consumer-trans~5] [c.i.b.p.t.TemplateScrubber    ] [<clinit>                 ] Time taken to load all the templates 0 millis
+2023-07-31 11:07:40.363 [DEBUG] [t-verify-consumer-trans~5] [c.i.b.p.t.d.TemplateInfo      ] [checkForTemplates        ] Template id : '123' result 'TEMPLATE_FOUND'
+2023-07-31 11:08:03.294 [DEBUG] [pool-2-thread-2          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:08:03.393 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:08:33.399 [DEBUG] [pool-2-thread-3          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:08:33.498 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:08:50.950 [DEBUG] [t-verify-consumer-trans~6] [c.i.b.p.t.d.TemplateInfo      ] [checkForTemplates        ] Template id : '123' result 'TEMPLATE_FOUND'
+2023-07-31 11:09:03.503 [DEBUG] [pool-2-thread-4          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:09:03.602 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:09:33.607 [DEBUG] [pool-2-thread-5          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:09:33.705 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:10:03.712 [DEBUG] [pool-2-thread-6          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:10:03.811 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:10:33.817 [DEBUG] [pool-2-thread-7          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:10:33.916 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:11:03.921 [DEBUG] [pool-2-thread-8          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:11:04.019 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:11:31.214 [DEBUG] [t-verify-consumer-trans~5] [c.i.b.p.t.d.TemplateInfo      ] [checkForTemplates        ] Template id : '123' result 'TEMPLATE_FOUND'
+2023-07-31 11:11:34.025 [DEBUG] [pool-2-thread-9          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:11:34.123 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:12:04.128 [DEBUG] [pool-2-thread-10         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:12:04.226 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:12:34.231 [DEBUG] [pool-2-thread-11         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:12:34.330 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:13:04.335 [DEBUG] [pool-2-thread-12         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:13:04.433 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:13:34.438 [DEBUG] [pool-2-thread-13         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:13:34.536 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:14:04.542 [DEBUG] [pool-2-thread-14         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:14:04.640 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:14:34.645 [DEBUG] [pool-2-thread-15         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:14:34.743 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:15:04.748 [DEBUG] [pool-2-thread-16         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:15:04.847 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:15:34.853 [DEBUG] [pool-2-thread-17         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:15:34.950 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:16:04.956 [DEBUG] [pool-2-thread-18         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:16:05.054 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:16:35.059 [DEBUG] [pool-2-thread-19         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:16:35.157 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:17:05.163 [DEBUG] [pool-2-thread-20         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:17:05.263 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:17:22.372 [DEBUG] [-verify-consumer-trans~10] [c.i.b.p.t.d.TemplateInfo      ] [checkForTemplates        ] Template id : '123' result 'TEMPLATE_FOUND'
+2023-07-31 11:17:35.268 [DEBUG] [pool-2-thread-21         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:17:35.366 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:18:05.371 [DEBUG] [pool-2-thread-22         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:18:05.469 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:18:35.475 [DEBUG] [pool-2-thread-23         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:18:35.572 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:19:05.578 [DEBUG] [pool-2-thread-24         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:19:05.676 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:19:19.563 [DEBUG] [-verify-consumer-trans~10] [c.i.b.p.t.d.TemplateInfo      ] [checkForStaticWords      ] Template id : '123' All STATIC words are not matching.
+2023-07-31 11:19:19.563 [DEBUG] [-verify-consumer-trans~10] [c.i.b.p.t.d.TemplateInfo      ] [checkForTemplates        ] Template id : '123' alreaddy processed.
+2023-07-31 11:19:35.681 [DEBUG] [pool-2-thread-25         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:19:35.779 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:20:05.784 [DEBUG] [pool-2-thread-1          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:20:05.882 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:20:35.887 [DEBUG] [pool-2-thread-2          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:20:35.984 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:21:05.989 [DEBUG] [pool-2-thread-3          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:21:06.087 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:21:36.092 [DEBUG] [pool-2-thread-4          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:21:36.190 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:22:06.195 [DEBUG] [pool-2-thread-5          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:22:06.293 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       103' Mills loaded size '    0.0033' MB
+2023-07-31 11:22:36.298 [DEBUG] [pool-2-thread-6          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:22:36.396 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       101' Mills loaded size '    0.0033' MB
+2023-07-31 11:23:06.400 [DEBUG] [pool-2-thread-7          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 2
+2023-07-31 11:23:06.499 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:23:36.503 [DEBUG] [pool-2-thread-8          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:23:36.601 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:24:06.606 [DEBUG] [pool-2-thread-9          ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:24:06.705 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:24:36.710 [DEBUG] [pool-2-thread-10         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:24:36.808 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:25:06.813 [DEBUG] [pool-2-thread-11         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:25:06.911 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:25:36.916 [DEBUG] [pool-2-thread-12         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:25:37.013 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:26:07.021 [DEBUG] [pool-2-thread-13         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 5
+2023-07-31 11:26:07.117 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:26:37.122 [DEBUG] [pool-2-thread-14         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:26:37.219 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:27:07.225 [DEBUG] [pool-2-thread-15         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:27:07.325 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:27:37.330 [DEBUG] [pool-2-thread-16         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:27:37.428 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:28:07.434 [DEBUG] [pool-2-thread-17         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:28:07.531 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:28:37.537 [DEBUG] [pool-2-thread-18         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 5
+2023-07-31 11:28:37.633 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB
+2023-07-31 11:29:07.639 [DEBUG] [pool-2-thread-19         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 4
+2023-07-31 11:29:07.736 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       101' Mills loaded size '    0.0033' MB
+2023-07-31 11:29:37.742 [DEBUG] [pool-2-thread-20         ] [c.i.b.p.t.d.TemplateLoaderTask] [run                      ] Time taken for to load tempaltes of Entity '1234' is 3
+2023-07-31 11:29:37.839 [DEBUG] [DltTemplatesDataLoader   ] [b.p.t.d.DltTemplatesDataLoader] [loadDistinctEntity       ] Completed loading the DLT Templates. Time taken : '       102' Mills loaded size '    0.0033' MB

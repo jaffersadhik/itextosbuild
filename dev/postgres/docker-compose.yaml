@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres
+    container_name: my-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: r3c
+      POSTGRES_USER: cfguser
+      POSTGRES_PASSWORD: Sy5Cf8@123
+    volumes:
+      - ./data:/var/lib/postgresql/data
+

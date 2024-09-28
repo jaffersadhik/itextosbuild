@@ -1,0 +1,11 @@
+services:
+  dnpostlog-t2tb:
+    image: dk-reg.mas:5000/itextos-dnpostlog-t2tb:2.0
+    environment: [
+       id=1, _JAVA_OPTIONS=-Xmx256m -Xms256m,cluster=trans]
+    volumes: ['/etc/hosts:/etc/hosts','../platform:/platform','./logs:/logs','../global.properties:/instance/global.properties','../log4j2-common.xml:/instance/log4j2-common.xml']
+    ports: ['21325:20000']
+version: '3'
+networks:
+  default:
+    external: {name: kafka}

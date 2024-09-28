@@ -1,0 +1,14 @@
+version: '3'
+services:
+  simulatorsmpp1:
+    image: dk-reg.mas:5000/ss_buildapi:2.0
+    ports: ['5775:5775'] 
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - module=simulatorsmpp
+    networks:    
+      - bearerbox
+    restart: always
+networks:
+  bearerbox:
+    external: true

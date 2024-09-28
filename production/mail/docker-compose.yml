@@ -1,0 +1,15 @@
+version: '3'
+services:
+  postfix-dkim:
+    build: .
+    ports:
+      - "25:25"
+      - "8891:8891"
+    volumes:
+      - ./main.cf:/etc/postfix/main.cf:ro
+      - ./opendkim.conf:/etc/opendkim.conf:ro
+      - ./KeyTable:/etc/opendkim/KeyTable:ro
+      - ./SigningTable:/etc/opendkim/SigningTable:ro
+      - ./trusted-hosts:/etc/opendkim/TrustedHosts:ro
+      - ./keys:/etc/opendkim/keys
+

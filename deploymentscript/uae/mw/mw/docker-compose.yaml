@@ -1,0 +1,12 @@
+services:
+  mw:
+    image: dk-reg.mas:5000/itextos-mw:2.0
+    environment: [
+       id=1, _JAVA_OPTIONS=-Xmx2G -Xms256m]
+    restart: always
+    volumes: ['/etc/hosts:/etc/hosts','../platform:/platform','./logs:/logs','../global.properties:/instance/global.properties','../log4j2-common.xml:/instance/log4j2-common.xml']
+    ports: ['40001:20000']
+version: '3'
+networks:
+  default:
+    external: {name: kafka}

@@ -1,0 +1,13 @@
+# /etc/prometheus/scrape_configs/http_job.yml
+
+# The job name for this HTTP service scrape
+- job_name: 'mw ic'
+
+# Define the targets (hostname or IP address and port) to scrape metrics from
+  static_configs:
+    - targets: ['192.168.1.173:20125']
+    - targets: ['192.168.1.174:20125']
+
+# Specify the path where the metrics are exposed by the HTTP service
+  metrics_path: /metrics
+

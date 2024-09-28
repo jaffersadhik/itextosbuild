@@ -1,0 +1,715 @@
+groups:
+  - name: example_alerts
+    rules:
+      - alert: JobDown
+        expr: up{job="mw_ic_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+      - alert: JobDown
+        expr: up{job="mw_ic_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_sbcv_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_sbcv_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_vc_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_vc_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_rc_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_rc_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_ch_other_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_ch_other_ch7_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_ch_other_ch8_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_subb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_subb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_sub-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_sub-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_fullmsg-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_fullmsg-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_dn-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dn-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnpostlog-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnpostlog-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnnopayload-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnnopayload-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_r3c_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_r3c_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dltc_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dltc_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_prc_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_prc_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_smppdlrhandover_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_smppdlrhandover_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_wc_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_wc_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnp_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dnp_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+
+
+      - alert: JobDown
+        expr: up{job="bulk_vsmsc1_104"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="bulk_vsmsc2_104"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="bulk_vsmsc3_104"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="bulk_vsmsc4_104"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="trans_vsmsc1_181"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="trans_vsmsc2_181"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="trans_vsmsc3_181"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="trans_vsmsc4_181"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="otp_vsmsc1_182"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="otp_vsmsc2_182"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="otp_vsmsc3_182"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="otp_vsmsc4_182"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_japi_193"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_dnr_193"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_japi_195"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_dnr_195"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_japi_196"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_dnr_196"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_sbc_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_sbc_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_t2e_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_t2e_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_clienthandover-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_clienthandover-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_errorlog-t2tb_175"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_errorlog-t2tb_176"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+      - alert: JobDown
+        expr: up{job="mw_r3r_193"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_r3r_195"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_r3r_196"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_rch_173"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+      - alert: JobDown
+        expr: up{job="mw_dch_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_httpclienthandover_177"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+
+      - alert: JobDown
+        expr: up{job="mw_httpclienthandover_178"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+ 
+
+
+      - alert: JobDown
+        expr: up{job="mw_rch_174"} == 0
+        for: 10s
+        labels:
+          severity: critical
+        annotations:
+          summary: "Job {{ $labels.job }} is down"
+          description: "The {{ $labels.job }} job has been down for more than 10 Seconds"
+
+
+
+

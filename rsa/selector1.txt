@@ -1,0 +1,3 @@
+selector1._domainkey	IN	TXT	( "v=DKIM1; h=rsa-sha256; k=rsa; s=email; "
+	  "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1uL+5yzuLw2yB5aUKYSvXDgBqZ2hVb7ElqMCS8r3XGzhcO4clloC/BJg4RHpz3NSzz7zVchJJZ0+Rdj+iVTwOPuVLUQCd+fmPiIrENXfjslozXnYf1HC2+oZuLVvdd5dxrU4yJ1A7dYlGE8DfuTkOIs0A7QWQSEMgzRA9zzsp2M+mQgWzrIC8r9b/imV5LGWXsex48EriQ38Pn"
+	  "WIHMaxrE+bB7BFH1/2fNNJFM4xTUFkONGb4ejeVeMIHIGcYsT0Ilx3vy1JRrdQ61dnyQy4rn4tsTFrY1kHfssniBpGlT7H5mGeZF8L/Yonkko4BZqPFifOTEKikXp6hYldi6mB2QIDAQAB" )  ; ----- DKIM key selector1 for techwizemail.in

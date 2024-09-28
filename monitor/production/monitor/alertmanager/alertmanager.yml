@@ -1,0 +1,22 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'  # Gmail SMTP server and port
+  smtp_from: 'itextosalert@gmail.com'     # Your Gmail email address
+  smtp_auth_username: 'itextosalert@gmail.com'  # Your Gmail email address
+  smtp_auth_password: 'ghgv xctm mqzf uhoh'  # App Password generated for your Gmail account
+  smtp_require_tls: true  # Enforce TLS encryption
+
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'  # Path to alert templates
+
+route:
+  receiver: 'email-gmail'
+  group_wait: 5s
+  group_interval: 30s
+  repeat_interval: 15m
+
+receivers:
+  - name: 'email-gmail'
+    email_configs:
+      - to: 'alerts-prod@winnovature.com'  # Email address to receive alerts
+        send_resolved: true  # Send resolved alerts
+

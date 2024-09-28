@@ -1,0 +1,20 @@
+receivers:
+  - name: 'email-gmail'
+    email_configs:
+      - to: 'ia@winnovature.com'
+        from: 'itextosalert@gmail.com'
+        smarthost: 'smtp.gmail.com:587'
+        auth_username: 'itextosalert@gmail.com'
+        auth_identity: 'itextosalert@gmail.com'
+        auth_password: 'ghgv xctm mqzf uhoh'
+        require_tls: true
+route:
+  group_wait: 10s
+  group_interval: 5m
+  repeat_interval: 12h
+  receiver: 'email-gmail'
+  routes:
+    - receiver: 'email-gmail'
+      match:
+        severity: 'critical'
+
