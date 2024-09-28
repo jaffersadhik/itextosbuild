@@ -3,7 +3,7 @@ services:
     image: dk-reg.mas:5000/mariadb:1.0
     environment: [MYSQL_ALLOW_EMPTY_PASSWORD=yes, MYSQL_DATABASE=gw, TZ=Asia/Kolkata,MYSQL_MAX_CONNECTIONS= 2000]
     restart: always
-    volumes: ['/home/deployments/mysql/configdb/data:/var/lib/mysql', '/home/deployments/mysql/configdb/logs:/var/log/mysql/'
+    volumes: ['./data:/var/lib/mysql', './logs:/var/log/mysql/'
      ]
     ports: ['15001:3306']
 version: '3'
