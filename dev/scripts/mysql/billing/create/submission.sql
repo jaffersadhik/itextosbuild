@@ -1,5 +1,28 @@
+-- MySQL dump 10.14  Distrib 5.5.68-MariaDB, for Linux (x86_64)
+--
+-- Host: 192.168.1.136    Database: billing
+-- ------------------------------------------------------
+-- Server version	10.5.12-MariaDB-1:10.5.12+maria~bionic-log
 
-CREATE TABLE `submission_20230701` (
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `submission`
+--
+
+DROP TABLE IF EXISTS `submission`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `submission` (
   `intf_type` varchar(10) NOT NULL,
   `intf_grp_type` varchar(10) NOT NULL,
   `msg_source` varchar(25) NOT NULL COMMENT 'Message Source',
@@ -90,21 +113,46 @@ CREATE TABLE `submission_20230701` (
   `dlt_rate` decimal(10,4) NOT NULL DEFAULT 0.0000 COMMENT 'Dlt rate per message',
   `add_error_info` mediumtext DEFAULT NULL,
   `created_ts` datetime(3) NOT NULL DEFAULT current_timestamp(3),
-  `billing_currency` varchar(3) DEFAULT NULL COMMENT 'billing currency',
+  `billing_currency` varchar(3) NOT NULL COMMENT 'billing currency',
   `billing_sms_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000,
   `billing_add_fixed_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Billing Additional Fixed Rate',
-  `base_currency` varchar(5) DEFAULT NULL COMMENT 'Base Currency',
+  `base_currency` varchar(3) NOT NULL COMMENT 'Base Currency',
   `base_sms_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Base SMS Rate',
   `base_add_fixed_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Base Additional Fixed Rate',
-  `ref_currency` varchar(5) DEFAULT NULL COMMENT 'Refrence Currency',
+  `ref_currency` varchar(3) NOT NULL COMMENT 'Refrence Currency',
   `ref_sms_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Refrence SMS Rate',
   `ref_add_fixed_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Refrence Additional Fixed Rate',
   `billing_exchange_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Billing Exchange Rate',
   `ref_exchange_rate` decimal(16,12) NOT NULL DEFAULT 0.000000000000 COMMENT 'Refrece Exchange Rate',
   `smpp_recv_time` datetime(3) DEFAULT NULL COMMENT 'Smpp Actival Received Time',
-  KEY `msg_id` (`msg_id`),
-  KEY `recv_time` (`recv_time`),
-  KEY `cli_id` (`cli_id`),
+  `mcc` varchar(10) DEFAULT NULL,
+  `mnc` varchar(10) DEFAULT NULL,
+  `segment` varchar(25) DEFAULT NULL,
+  KEY `sub_file_id` (`file_id`),
+  KEY `submission_idx` (`msg_id`),
   KEY `base_msg_id` (`base_msg_id`),
-  KEY `dest` (`dest`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+  KEY `cli_id` (`cli_id`),
+  KEY `recv_date` (`recv_date`),
+  KEY `recv_time` (`recv_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `submission`
+--
+
+LOCK TABLES `submission` WRITE;
+/*!40000 ALTER TABLE `submission` DISABLE KEYS */;
+/*!40000 ALTER TABLE `submission` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-10-09 15:37:01
